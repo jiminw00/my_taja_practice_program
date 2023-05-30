@@ -1,0 +1,70 @@
+iostream	This header contains the prototype for standard input and output functions used in C++ like cin, cout, etc.
+cmath	This is the header containing various math library functions.
+iomanip	This header contains stream manipulator functions that allow us to format the stream of data.
+cstdlib	The header cstdlib contains various functions related to conversion between text and numbers, memory allocation, random numbers, and other utility functions.
+ctime	ctime contains function prototypes related to date and time manipulations in C++.
+cctype	This header includes function prototypes that test the type of characters (digit, punctuation, etc.). It also has prototypes that are used to convert from uppercase to lowercase and another way around.
+cstring	cstring header includes function prototypes for C-style string-processing functions.
+cstdio	This header contains function prototypes for the C-style standard input/output library functions which we included initially in stdio.h
+fstream	Function prototypes for functions that perform input/output from/to files on disk are included in fstream header.
+climits	climits header has the integral size limits of the system.
+cassert	cassert header contains macros and variables for adding diagnostics that help us in program debugging.
+cfloat	This header file contains the size limits for floating-point numbers on the system.
+string	The header string defines the class string of the C++ Standard Library.
+list, vector, stack, queue, deque, map,  set, bitset	All these headers are used for Standard Template Library (STL) implementation. Each of these headers contains the respective class definition and function prototypes.
+typeinfo	This header contains various classes for Runtime Type Identification (RTTI).
+exception,  stdexcept	All the classes and functions used for exception handling in C++ are included in these two headers.
+memory	This header is used by the C++ standard library to allocate memory.
+sstream	Functions that read input from strings in memory and output to strings in memory require functions prototypes from sstream header to implement the functionality.
+functional	Used by C++ standard library algorithms.
+iterator	Function prototypes and classes in this header are used by Standard Template Library to traverse through or iterate through the data inside containers.
+algorithm	Methods that act on STL container data are included in this header algorithm
+locale	To process data in the original natural form for different languages or locales (currencies, character presentation, etc.), the locale header definitions are used.
+limits	This header defines the data type limit for Numbers on each platform.
+utility	This header contains utility functions and classes used by the Standard C++ library.
+
+sqrt(x)	<cmath> Header. Accepts any non-negative numeric parameter x and returns the square root of this number x
+pow(base,exponent)	<cmath> Header.Raises the ‘base’ value to the power specified by the exponent. Returns base^exponent.
+exp(x)	<cmath> Header.Takes any number (positive, negative or zero) as a parameter and returns exponential (Euler’s number) e raised to the given parameter
+fabs(x)	<cmath> Header.Returns absolute value of an argument.
+log(x)	<cmath> Header.Returns the natural logarithm (to the base e) of value x
+sin(x)	<cmath> Header.Returns sine of the angle x (in radians)
+cos(x)	<cmath> Header.Returns cosine of angle x (in radians)
+tan(x)	<cmath> Header.Returns tangent of angle x (in radians)
+asin(x)	<cmath> Header.Returns inverse sine (in radians) of number x
+acos(x)	<cmath> Header.Returns inverse cosine (in radians) of number x
+atan(x)	<cmath> Header.Returns inverse tangent (in radians) of number x
+
+toupper(ch)	<cctype> Header. Takes in character ‘ch’ as an argument and returns the uppercase equivalent of ch if it's present otherwise returns ch.
+tolower(ch)	<cctype> Header.Takes in character ‘ch’ as an argument and returns the lowercase equivalent of ch if it's present otherwise returns ch.
+isalpha(ch)	<cctype> Header.Returns non-zero if ch is alphabet otherwise 0.
+isalnum(ch)	<cctype> Header.Returns non-zero if ch is alphanumeric (alphabet or number) otherwise 0.
+isupper(ch)	<cctype> Header.Returns non-zero value if ch is uppercase otherwise 0.
+isdigit(ch)	<cctype> Header.Returns non-zero value if ch is a number otherwise 0.
+islower()	<cctype> Header.Returns non-zero value if ch is lowercase otherwise 0.
+
+abs(x)	<stdlib> Header. Returns absolute value of an integral argument x
+atof(const char* str)	<stdlib> Header.Converts string to double; returns double
+atoi(const char* str)	<stdlib> Header. Converts string to int; returns an int
+atol(const char* str)	<stdlib> Header.Converts string to long int; returns a long int
+atoll(const char* str)	<stdlib> Header.Converts string to long long int; returns a long long int
+strtod	<stdlib> Header.Converts string to double
+strtol	<stdlib> Header.Converts string to long int
+strtoul	<stdlib> Header.Converts string to unsigned long integer
+strtof	<stdlib> Header.Converts string to float
+strtold	<stdlib> Header.Converts string to long double
+strtoull	<stdlib> Header.Converts string to unsigned long long integer
+strtoll	<stdlib> Header.Converts string to long long integer
+srand(int seed)	<stdlib> Header.This is a pseudo-random generator that is initialized to argument ‘seed’
+qsort	<stdlib> Header.Sorts elements of the array in ascending order(internally uses quick sort method)
+abort	<stdlib> Header.Aborts the process resulting in abnormal program termination
+atexit	<stdlib> Header.Has function passed as an argument which is executed resulting in normal program termination.
+malloc(size_t size)	<stdlib> Header.Used to allocate memory specified by size and return a pointer to it
+calloc ( size_t num, size_t size)	<stdlib> Header.Allocates memory of (num*size) bytes with all bits initialized to zero
+free(void* ptr)	<stdlib> Header. Deallocates memory block allocated by malloc, calloc or realloc function call.
+realloc ( void* ptr, size_t size )	<stdlib> Header. Resizes the memory block pointed to by ptr that was initially allocated using malloc or calloc function call.
+quick_exit	<stdlib> Header.Normal termination of the process after returning control to the host environment.
+system	<stdlib> Header.Invokes command processor to execute system command passed as an argument
+getenv	<stdlib> Header.Retrieves the value of environment string passed as an argument to the function
+wctomb	<stdlib> Header.Convert the wide character to a multibyte sequence
+wcstombs	<stdlib> Header.Convert wide character string to multibyte string
