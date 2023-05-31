@@ -8,6 +8,8 @@ void File_related::which_file() {
     while (true) {
         try {
             system("cls");
+            ev.sound_effects('C');
+            ev.sound_effects('G');
             ev.change_colors(14);
             cout << ">>> 수정할 파일 선택 <<<" << endl;
             ev.change_colors(11);
@@ -23,17 +25,14 @@ void File_related::which_file() {
             ev.change_colors(7);
             cout << "파일 번호를 입력하세요: ";
             cin >> fileNumber;
-
             if (cin.fail()) {
                 cin.clear();
-                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                cin.ignore();
                 throw runtime_error("정수로 입력해주세요!!");
             }
-
             if (fileNumber < 1 || fileNumber > 9) {
                 throw out_of_range("유효한 범위의 값을 입력해주세요.");
             }
-
             break;
         }
         catch (const runtime_error& e) {
@@ -42,7 +41,6 @@ void File_related::which_file() {
         catch (const out_of_range& e) {
             cerr << e.what() << endl;
         }
-
     }
     // 선택한 파일에 해당하는 파일명 설정
     switch (fileNumber) {
@@ -77,6 +75,8 @@ void File_related::which_file() {
 }
 
 void File_related::add_file_data() {
+    ev.sound_effects('C');
+    ev.sound_effects('G');
     which_file();
     system("cls");
     cin.ignore(); // 버퍼 비우기
@@ -97,6 +97,8 @@ void File_related::add_file_data() {
 }
 
 void File_related::edit_file_data() {
+    ev.sound_effects('C');
+    ev.sound_effects('G');
     which_file();
     system("cls");
     string search_value;
@@ -152,6 +154,8 @@ void File_related::edit_file_data() {
 }
 
 void File_related::del_file_data() {
+    ev.sound_effects('C');
+    ev.sound_effects('G');
     which_file();
     system("cls");
     string search_value;

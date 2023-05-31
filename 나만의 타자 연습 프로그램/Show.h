@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "Option.h"
 
 class Show {
 protected:
@@ -15,5 +16,6 @@ public:
     int tasuu(std::string user_input, int lang_num, int time_lapse, bool now);
     int correctness(std::string user_input, std::string file_input, bool now);
     double timelapse(int timelapse, bool now);
+    Option op;
 };
 

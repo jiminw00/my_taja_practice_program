@@ -32,6 +32,7 @@ int Show::typo(std::string user_input, std::string file_input, int lang_num, boo
     }
     else {
         temp = sum[0];
+        cnt[0] = 0;
         sum[0] = 0;
         return isKorean(temp, lang_num);
     }
@@ -77,6 +78,7 @@ int Show::correctness(std::string user_input, std::string file_input, bool now) 
 
     else {
         int temp2 = len_sum;
+        if (len_sum == 0)temp2 = 1; //0으로 나누기 막기
         temp = sum[2];
         sum[2] = len_sum= 0;
         return  (int)(((double)temp /temp2) * 100);
