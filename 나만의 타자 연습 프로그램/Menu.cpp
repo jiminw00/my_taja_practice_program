@@ -4,8 +4,8 @@
 using namespace std;
 
 Menu::Menu() {
-    menu_num = 0; // 멤버 변수 menu_num을 초기화합니다.
-    lang_num = 0; // 멤버 변수 lang_num을 초기화합니다.
+    menu_num = 0; // 멤버 변수 menu_num을 초기화
+    lang_num = 0; // 멤버 변수 lang_num을 초기화
 }
 
 int Menu::menu_select() {
@@ -22,6 +22,8 @@ int Menu::menu_select() {
         cout << " 4. 설정 " << endl;
         cout << " 5. 프로그램 종료  " << endl;
         option.change_colors(7);
+        option.sound_effects('C');
+        option.sound_effects('G');
         cout << " 메뉴를 선택하기 위해서 번호 입력" << endl;
 
         if (!(cin >> menu_num)) {
@@ -42,7 +44,8 @@ int Menu::menu_select() {
 int Menu::choose_language() {
 
     do {
-
+        option.sound_effects('C');
+        option.sound_effects('G');
         option.change_colors(14);
         cout << ">>>언어 선택<<<" << endl;
         option.change_colors(11);

@@ -17,7 +17,6 @@ int main() {
     SetConsoleTitleA("나만의 타자 연습 프로그램");
     op.play_songs();
 
-
     Menu menu;
     menu.menu_switch();
 

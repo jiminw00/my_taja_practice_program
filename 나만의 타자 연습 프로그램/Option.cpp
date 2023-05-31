@@ -7,6 +7,8 @@ void Option::option_select() {
 	do {
 		try {
 			change_colors(14);
+			sound_effects('C');
+			sound_effects('G');
 			std::cout << ">>>º≥¡§ ∏ﬁ¥∫ º±≈√<<<" << std::endl;
 			change_colors(11);
 			std::cout << " 1. µ•¿Ã≈Õ ∆ƒ¿œ ∞¸∏Æ- √ﬂ∞° " << std::endl;
@@ -67,13 +69,15 @@ int Option::option_event_ctl(){
 	while (1) {
 		std::cin.ignore();
 		system("cls");
+		sound_effects('C');
+		sound_effects('G');
 		std::cout << ">>>¿Ã∫•∆Æ ¡¶æÓ<<<" << std::endl;
 		onoff = event_on[0] ?  "ƒ—¡¸" : "≤®¡¸";
 		event_color();
 		std::cout << "1. ¿Ã∫•∆Æ ¿¸√º: " << onoff << std::endl;
 		onoff = event_on[1] ?"ƒ—¡¸" : "≤®¡¸";
 		event_color();
-		std::cout << "2. æÓ»÷ ∂Ê: " << onoff << std::endl;
+		std::cout << "2. »ø∞˙¿Ω: " << onoff << std::endl;
 		onoff = event_on[2] ? "ƒ—¡¸" : "≤®¡¸";
 		event_color();
 		std::cout << "3. ±€ææ ªˆ: " << onoff << std::endl;
@@ -92,7 +96,7 @@ int Option::option_event_ctl(){
 		std::cout << "1. ¿Ã∫•∆Æ ¿¸√º: " << onoff << std::endl;
 		onoff = event_on[1] ? "ƒ—¡¸" : "≤®¡¸";
 		event_color(); 
-		std::cout << "2. æÓ»÷ ∂Ê: " << onoff << std::endl;
+		std::cout << "2. »ø∞˙¿Ω: " << onoff << std::endl;
 		onoff = event_on[2] ?  "ƒ—¡¸" : "≤®¡¸";
 		event_color(); 
 		std::cout << "3. ±€ææ ªˆ: " << onoff << std::endl;
